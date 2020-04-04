@@ -6,12 +6,12 @@
 # umask 022
 
 # You may uncomment the following lines if you want `ls' to be colorized:
-# export LS_OPTIONS='--color=auto'
-# eval "`dircolors`"
-# alias ls='ls $LS_OPTIONS'
+ export LS_OPTIONS='--color=auto'
+ eval "`dircolors`"
+ alias ls='ls $LS_OPTIONS'
 # alias ll='ls $LS_OPTIONS -lh'
 # alias l='ls $LS_OPTIONS -lA'
-#
+
 
 if [ -f /etc/bashrc ]; then
 . /etc/bashrc
@@ -36,9 +36,10 @@ fi
  alias ..5='cd ../../../../../'
 
 #其他alias
- alias ls='ls --color=auto'
+# alias ls='ls --color=auto'
  alias ll='ls -lh'
  alias la='ls -a'
+ 
  alias df='df -Th'
  alias free='free -h'
  alias du='du -h'

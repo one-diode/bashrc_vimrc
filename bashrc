@@ -19,7 +19,7 @@ fi
 
 
 # Some more alias to avoid making mistakes:
- alias rm='rm -i'
+ alias rm='rm -f'
  alias cp='cp -i'
  alias mv='mv -i'
 

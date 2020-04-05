@@ -40,7 +40,7 @@ fi
  alias free='free -h'
  alias du='du -h'
 
-#设置操作系统语言环境为中国大陆，字符 编码为UTF-8
+#设置操作系统语言
 export LC_ALL="zh_CN.UTF-8"
 export LANG="zh_CN.UTF-8"
 export LANGUAGE="zh_CN.UTF-8"

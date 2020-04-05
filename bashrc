@@ -1,5 +1,9 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 
+if [ -f /etc/bashrc ]; then
+. /etc/bashrc
+fi
+
 # Note: PS1 and umask are already set in /etc/profile. You should not
 # need this unless you want different defaults for root.
 # PS1='${debian_chroot:+($debian_chroot)}\h:\w\$ '
@@ -9,13 +13,8 @@
  export LS_OPTIONS='--color=auto'
  eval "`dircolors`"
  alias ls='ls $LS_OPTIONS'
-# alias ll='ls $LS_OPTIONS -lh'
-# alias l='ls $LS_OPTIONS -lA'
-
-
-if [ -f /etc/bashrc ]; then
-. /etc/bashrc
-fi
+ alias ll='ls $LS_OPTIONS -lh'
+ alias l='ls $LS_OPTIONS -lA'
 
 
 # Some more alias to avoid making mistakes:
@@ -36,9 +35,6 @@ fi
  alias ..5='cd ../../../../../'
 
 #其他alias
-# alias ls='ls --color=auto'
- alias ll='ls -lh'
- alias la='ls -a'
  
  alias df='df -Th'
  alias free='free -h'
@@ -47,7 +43,7 @@ fi
 #设置操作系统语言环境为中国大陆，字符 编码为UTF-8
 export LC_ALL="zh_CN.UTF-8"
 export LANG="zh_CN.UTF-8"
-
+export LANGUAGE="zh_CN.UTF-8"
 
 #彩色命令行提示符
 force_color_prompt=yes
